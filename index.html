@@ -1,39 +1,50 @@
 <html>
 	<head>
 		<title>#3 - Paint Online</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link type="text/css" rel="stylesheet" href="styles.css"></style>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<h1>Paint Online</h1>
-		<p style="padding-bottom:2em;">Use your creativity and color the pictures</p>
+		<p style="padding-bottom:3em;">Use your creativity and color the pictures</p>
 		<div class="drawings">
 			<div id="car" style="display:block">
-				<div id="car-body" style="position:absolute;display:block">
-					<div id="car-back-body"></div>
-					<div id="car-mid-body"></div>
-					<div id="car-front-body"></div>
+				<div id="car-body">
+					<div id="car-back-body" class="paintable"></div>
+					<div id="car-mid-body" class="paintable"></div>
+					<div id="car-front-body" class="paintable"></div>
 				</div>
 				<div id="car-wheels" style="position:absolute;display:block">
-					<div id="car-back-wheel"></div>
-					<div id="car-front-wheel"></div>
+					<div id="car-back-wheel" class="paintable"></div>
+					<div id="car-front-wheel" class="paintable"></div>
 				</div>
 			</div>
 
 			<div id="traffic-lights">
-				<div id="traffic-lights-panel"></div>
+				<div id="traffic-lights-panel" class="paintable"></div>
 				<div id="traffic-lights-signals">
-					<div id="traffic-lights01"></div>
-					<div id="traffic-lights02"></div>
-					<div id="traffic-lights03"></div>
+					<div id="traffic-lights01" class="paintable"></div>
+					<div id="traffic-lights02" class="paintable"></div>
+					<div id="traffic-lights03" class="paintable"></div>
 				</div>
 			</div>
 		</div>	
+ 
+		<div class="colors">
+			<div id="black" style="background-color:black;"></div>
+			<div id="blue" style="background-color:blue;"></div>
+			<div id="green" style="background-color:green;"></div>
+			<div id="red" style="background-color:red;"></div>
+			<div id="yellow" style="background-color:yellow;"></div>
+			<div id="orange" style="background-color:orange;"></div>
+			<div id="magenta" style="background-color:magenta;"></div>
+			<div id="brown" style="background-color:brown;"></div>
+			<div id="purple" style="background-color:purple;"></div>
+			<div id="gray" style="background-color:gray;"></div>
+			<div id="white" style="background-color:white;"></div>
+		</div>
 
-	<!-- 
-		<div class="paintings"></div>
-	-->
-	
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="app.js"></script>	
 	</body>	
