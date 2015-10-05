@@ -1,3 +1,3 @@
-# #3 Paint Online
+# #3 - Paint Online
 ---
 Use your creativity and color the pictures
