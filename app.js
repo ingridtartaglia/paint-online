@@ -9,5 +9,9 @@ $(document).ready(function(){
 	$(".paintable").click(function(){
 		$(this).css("background-color", selectedColor);
 	});
+
+	$(".btn-clear").click(function(){
+		$(".paintable").css("background-color", "");
+	});
 });
 

@@ -4,282 +4,77 @@ body {
 	text-align: center;
 }
 
-.drawings {
+p {
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+/* Squares */
+.squares { 
 	display: table;
     margin: 0 auto;
 }
-
-/* Big Car */
-@media screen and (min-width: 650px){
-	#car-back-body {
-		border: 1px solid black;
-		height: 80px;
-		width: 80px;
-		margin-top: 80px;
-		float: left;
-	}
-	#car-mid-body {
-		border: 1px solid black;
-		height: 160px;
-		width: 200px;
-		float: left;
-	}
-	#car-front-body {
-		border: 1px solid black;
-		height: 80px;
-		width: 80px;
-		margin-top: 80px;
-		float: left;
-	}
-	#car-back-wheel {
-		border: 1px solid black;
-		border-radius: 30px;
-		height: 60px;
-		width: 60px;
-		margin-left: 51px;
-		margin-top: 161px;
-		float:left;
-	}
-	#car-front-wheel {
-		border: 1px solid black;
-		border-radius: 30px;
-		height: 60px;
-		width: 60px;
-		float: right;
-		margin-left: 140px;
-		margin-top: 161px;
-	}
+.squares-row {
+	display: table-cell;
 }
 
-/* Medium Car */
-@media screen and (max-width: 650px) {
-	#car-back-body {
-		border: 1px solid black;
-		height: 60px;
-		width: 60px;
-		margin-top: 60px;
-		float: left;
-	}
-
-	#car-mid-body {
-		border: 1px solid black;
-		height: 120px;
-		width: 150px;
-		float: left;
-	}
-
-	#car-front-body {
-		border: 1px solid black;
-		height: 60px;
-		width: 60px;
-		margin-top: 60px;
-		float: left;
-	}
-
-	#car-back-wheel {
-		border: 1px solid black;
-		border-radius: 25px;
-		height: 45px;
-		width: 45px;
-		margin-left: 39px;
-		margin-top: 121px;
-		float:left;
-	}
-
-	#car-front-wheel {
-		border: 1px solid black;
-		border-radius: 25px;
-		height: 45px;
-		width: 45px;
-		float: right;
-		margin-left: 105px;
-		margin-top: 121px;
-	}
-}
-
-/* Small Car */
-@media screen and (max-width: 500px) {
-	#car-back-body {
-		border: 1px solid black;
+@media screen and (min-width: 500px) {
+	.paintable {
+		border: 1px dashed silver;
 		height: 40px;
 		width: 40px;
-		margin-top: 40px;
-		float: left;
-	}
-
-	#car-mid-body {
-		border: 1px solid black;
-		height: 80px;
-		width: 100px;
-		float: left;
-	}
-
-	#car-front-body {
-		border: 1px solid black;
-		height: 40px;
-		width: 40px;
-		margin-top: 40px;
-		float: left;
-	}
-
-	#car-back-wheel {
-		border: 1px solid black;
-		border-radius: 20px;
-		height: 30px;
-		width: 30px;
-		margin-left: 26px;
-		margin-top: 81px;
-		float:left;
-	}
-
-	#car-front-wheel {
-		border: 1px solid black;
-		border-radius: 20px;
-		height: 30px;
-		width: 30px;
-		float: right;
-		margin-left: 70px;
-		margin-top: 81px;
 	}
 }
-
-/* Big Traffic Lights */
-@media screen and (min-width: 650px){
-	#traffic-lights-signals {
-		margin-left: 526px;
-		margin-top: -147px;
-	}
-	#traffic-lights01 {
-		border: 1px solid black;
-		border-radius: 20px;
-		height: 30px;
-		width: 30px;
-		margin:10px;
-	}
-	#traffic-lights02 {
-		border: 1px solid black;
-		border-radius: 20px;
-		height: 30px;
-		width: 30px;
-		margin:10px;
-	}
-	#traffic-lights03 {
-		border: 1px solid black;
-		border-radius: 20px;
-		height: 30px;
-		width: 30px;
-		margin:10px;
-	}
-	#traffic-lights-panel {
-		border: 1px solid black;
-		height: 160px;
-		width: 100px;
-		margin-left:500px;
-	}
-}
-
-/* Medium Car */
-@media screen and (max-width: 650px) {
-	#traffic-lights-signals {
-		margin-left: 395px;
-		margin-top: -110px;
-	}
-	#traffic-lights01 {
-		border: 1px solid black;
-		border-radius: 15px;
-		height: 22px;
-		width: 22px;
-		margin:7px;
-	}
-	#traffic-lights02 {
-		border: 1px solid black;
-		border-radius: 15px;
-		height: 22px;
-		width: 22px;
-		margin:7px;
-	}
-	#traffic-lights03 {
-		border: 1px solid black;
-		border-radius: 15px;
-		height: 22px;
-		width: 22px;
-		margin:7px;
-	}
-	#traffic-lights-panel {
-		border: 1px solid black;
-		height: 120px;
-		width: 75px;
-		margin-left:375px;
-	}
-}
-
-/* Small Traffic Lights */
-@media screen and (max-width: 500px) {
-	#traffic-lights-signals {
-		margin-left: 263px;
-		margin-top: -76px;
-	}
-	#traffic-lights01 {
-		border: 1px solid black;
-		border-radius: 10px;
-		height: 15px;
-		width: 15px;
-		margin:5px;
-	}
-	#traffic-lights02 {
-		border: 1px solid black;
-		border-radius: 10px;
-		height: 15px;
-		width: 15px;
-		margin:5px;
-	}
-	#traffic-lights03 {
-		border: 1px solid black;
-		border-radius: 10px;
-		height: 15px;
-		width: 15px;
-		margin:5px;
-	}
-	#traffic-lights-panel {
-		border: 1px solid black;
-		height: 80px;
-		width: 50px;
-		margin-left: 250px;
+@media screen and (max-width: 500px){
+	.paintable {
+		border: 1px dashed silver;
+		height: 25px;
+		width: 25px;
 	}
 }
 
 /* Colors */
 .colors {
 	margin: 0 auto;
-	display: block;
 }
 
 @media screen and (min-width: 650px) {
 	.colors div {
-		border: 1px solid black;
+		border: 1px solid silver;
 		height: 40px;
 		width: 40px;
 		display: inline-block;
-		margin: 150px 5px;
+		margin: 100px 5px;
 	}
 }
 
 @media screen and (max-width: 650px) {
 	.colors div {
-		border: 1px solid black;
+		border: 1px solid silver;
 		height: 30px;
 		width: 30px;
 		display: inline-block;
-		margin: 100px 3px;
+		margin: 80px 3px;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.colors div {
-		border: 1px solid black;
+		border: 1px solid silver;
 		height: 20px;
 		width: 20px;
 		display: inline-block;
-		margin: 80px 2px;
+		margin: 50px 1px;
 	}
+}
+
+/* Button */
+button {
+	display: inline-block;
+	background-color: transparent;
+	border: 1px solid black;
+	padding: 10px 10px;
+	font-family: inherit;
+	font-size: inherit;
+	margin-top: 0;
 }
